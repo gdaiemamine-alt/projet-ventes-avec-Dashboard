@@ -1,87 +1,69 @@
-"""
-📊 PROJET : Analyse et Visualisation des Ventes
+📊 Dashboard des Ventes (Streamlit)
+🧾 Description
 
-👨‍💻 Auteurs :
-- Amine Gdaiem
-- Maymoun Aouaya
+Ce projet est un dashboard interactif de visualisation des ventes développé avec Streamlit.
+Il génère des données simulées et permet d’analyser facilement les performances commerciales via des indicateurs clés et des graphiques.
 
-------------------------------------------------------------
+🚀 Fonctionnalités
+Génération dynamique de données de ventes
+Calcul automatique :
+💰 Chiffre d'affaires brut et net
+📦 Quantités vendues
+🏷️ Remises appliquées
+Affichage des KPI principaux
+Table interactive des données
+Visualisations :
+Histogramme des quantités
+Évolution du chiffre d'affaires
+Corrélation Prix vs CA Net
+Bar chart du CA Net
+Top 5 des produits les plus performants
+🛠️ Technologies utilisées
+Python
+Streamlit
+Pandas
+Matplotlib
+📦 Installation
+Cloner le projet :
+git clone https://github.com/ton-repo/dashboard-ventes.git
+cd dashboard-ventes
+Installer les dépendances :
+pip install -r requirements.txt
+▶️ Lancer l'application
+streamlit run app.py
 
-🧾 Description :
-Ce script Python permet de simuler, analyser et visualiser
-des données de ventes.
+Puis ouvrir le navigateur à l'adresse indiquée (généralement http://localhost:8501)
 
-Il génère un fichier CSV, effectue des calculs statistiques
-et affiche plusieurs graphiques pour faciliter l’analyse.
+⚙️ Utilisation
+Ajuster le nombre de lignes via le slider
+Explorer les indicateurs clés
+Analyser les graphiques
+Identifier les meilleurs produits via le Top 5
+📊 Structure des données
 
-Une version interactive peut être utilisée avec Streamlit.
+Chaque ligne contient :
 
-------------------------------------------------------------
+Colonne	Description
+ID	Identifiant produit
+Prix	Prix unitaire
+Quantite	Nombre d’unités vendues
+Remise	Remise (%)
+CA_Brut	Chiffre d'affaires brut
+CA_Net	Chiffre d'affaires après remise
+📈 Exemple de KPI
+CA Total (somme du CA Net)
+Quantité totale vendue
+Remise moyenne
+🔮 Améliorations possibles
+Ajout de filtres (prix, remise, quantités)
+Export des données en CSV
+Graphiques interactifs avec Plotly
+Connexion à une base de données réelle
+Ajout de catégories produits
+👤 Auteur
 
-⚙️ Fonctionnalités :
+Amine Gdaiem / maymoun aouay
 
-1. Génération des données
-   - Création de "ventes.csv"
-   - Données : ID, Prix, Quantité, Remise
+📄 Licence
 
-2. Lecture des données
-   - Chargement du fichier CSV
-   - Conversion des types (int, float)
-
-3. Analyse
-   - Chiffre d’affaires total (CA)
-   - Quantité totale vendue
-   - Remise moyenne
-   - Produit le plus rentable
-
-4. Export
-   - Création de "resultats_final.csv"
-   - Ajout : CA Brut et CA Net
-
-5. Visualisation
-   - Diagramme en barres
-   - Courbe d’évolution
-   - Histogramme
-   - Scatter plot
-   - Camembert (Top 5 produits)
-
-------------------------------------------------------------
-
-🛠️ Technologies utilisées :
-- Python 3
-- csv
-- random
-- matplotlib
-- streamlit (optionnel)
-
-------------------------------------------------------------
-
-▶️ Exécution :
-
-Mode console :
-    python vent.py
-
-Mode Streamlit :
-    streamlit run vent1.py
-
-------------------------------------------------------------
-
-📁 Fichiers générés :
-- ventes.csv
-- resultats_final.csv
-
-------------------------------------------------------------
-
-⚠️ Remarques :
-- matplotlib est utilisé pour les graphiques
-- Streamlit nécessite la commande :
-      streamlit run vent1.py
-
-------------------------------------------------------------
-
-🎯 Objectif :
-Apprendre à manipuler des données, faire des analyses
-et créer des visualisations avec Python.
-
-------------------------------------------------------------
-"""
+Ce projet est libre d'utilisation à des fins éducatives.
