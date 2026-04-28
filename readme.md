@@ -62,7 +62,7 @@ Connexion à une base de données réelle
 Ajout de catégories produits
 👤 Auteur
 
-Amine Gdaiem / maymoun aouay
+Amine Gdaiem / maymoun aouay / Fares Drira
 
 📄 Licence
 
